@@ -5,14 +5,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meow Café</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
 </head>
 <body>
 
   <main>
+  <header >
+    <div class="d-flex align-items-center justify-content-space-around">
+      <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center" id="h-box-logo">
+          <img src="./assets/image/logo-header.png" alt="logo" class="header--logo">
+          <a href="" class="h--logo-link">Meow Café</a>
+        </div>
 
+        <nav class="navigation">
+        <a href="" class="navigation--link">Inicio</a>
+        <a href="" class="navigation--link">Produtos</a>
+        <a href="" class="navigation--link">Sobre</a>
+        </nav>
+      </div>
 
+      <div class="header-box--button">
+        <button role="button" class="btn btn--login">
+        <a href="">Login</a>
+        </button>
+
+        <button role="button" class="btn btn--delivery">
+        <a href="">Delivery</a>
+        </button>
+      </div> 
+    </div> 
+  </header>
+  <!--
+    *******
+    Home
+    *******
+  -->
+<section class="" id="home">
+  <div class="" id="home-box--text">
+    <p class="home--text">
+    Sabor inesquecível
+    </p> 
+    <h1 class="home--title">
+    Meow <br>
+    Café
+    </h1>
+    <p class="home--subtitle">
+    Um lugar perfeito para pais de pets e amantes de café. Nossa cafeteria tem um espaço confortável para você e seu melhor amigo.
+    </p>
+  </div>
+  
+  <div class="home--image">
+  <!--Image in CSS-->
+  </div>
+  </section> 
     <!--
       ******
       coffe
@@ -20,34 +67,34 @@
     -->
     <section class="" id="coffe">
 
-      <div class="s-coffe-box--text">
-        <h2 class="coffe-title">
+      <div class="coffe-box--text">
+        <h2 class="coffe--title">
           Cafés
         </h2>
-        <div class="coffe-line"></div>
-        <p class="coffe-subtitle">
+        <div class="coffe--line"></div>
+        <p class="coffe--subtitle">
           Conheça nossos cafês exclusivos pensados e preparados por nossos baristas renomados
         </p>
-        <button class="btn coffe-button">
+        <button class="btn coffe--button">
           <a href="#">veja todos ></a>
         </button>
       </div>
 
-      <div class="d-flex align-items-center justify-content-center">
-
+      <div class="d-flex align-items-center justify-content-center" id="s-coffe-box--cards">
+        <!--Box 01-->
         <div class="s-box-coffe color-01">
           <div class="s-box-coffe--image image-coffe-01">
-          
+          <!--Image in CSS-->
           </div>
 
-          <div class="s-box-coffe--text">
-            <p>
+          <div class="box-coffe--text">
+            <p class="b-coffe--title">
               R$ 24,90
             </p>
-            <h2>
+            <h2 class="b-coffe--subtitle">
               Capuccino
             </h2>
-            <p>
+            <p class="b-coffe--text">
               Café expresso , leite vaporizado, espuma e um toque de caramelo.
             </p>
           </div>
@@ -55,42 +102,42 @@
             <a href="">Delivery</a>
           </button>
         </div>
-
+        <!--Box 02-->
         <div class="s-box-coffe color-02">
           <div class="s-box-coffe--image image-coffe-02">
-
+          <!--Image in CSS-->
           </div>
 
-          <div class="s-box-coffe--text">
-            <p>
-              R$ 24,90
+          <div class="box-coffe--text">
+            <p class="b-coffe--title">
+              R$ 16,00
             </p>
-            <h2>
-              Capuccino
+            <h2 class="b-coffe--subtitle">
+              Café ao Leite
             </h2>
-            <p>
-              Café expresso , leite vaporizado, espuma e um toque de caramelo.
+            <p class="b-coffe--text">
+              O clássico, amado pelos brasileiros, com um toque de sofisticação!
             </p>
           </div>
           <button class="s-box-coffe--button">
             <a href="">Delivery</a>
           </button>
         </div>
-
+        <!--Box 03-->
         <div class="s-box-coffe color-03">
           <div class="s-box-coffe--image image-coffe-03">
-
+          <!--Image in CSS-->
           </div>
 
-          <div class="s-box-coffe--text">
-            <p class="">
-              R$ 24,90
+          <div class="box-coffe--text">
+            <p class="b-coffe--title">
+              R$ 12,00
             </p>
-            <h2 class="">
-              Capuccino
+            <h2 class="b-coffe--subtitle">
+              Café Preto
             </h2>
-            <p class="">
-              Café expresso , leite vaporizado, espuma e um toque de caramelo.
+            <p class="b-coffe--text">
+              Grãos selecionados feitos no seu método de preparo favorito.
             </p>
           </div>
           <button class="s-box-coffe--button">
