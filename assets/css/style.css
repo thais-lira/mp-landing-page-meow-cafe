@@ -1,4 +1,5 @@
-/*
+
+@import url("assets/css/header.css");/*
 1- Import
 2- Global setings
 3 - Header
@@ -15,6 +16,7 @@
 
 /*Import*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 /*Global settings*/
 
@@ -60,10 +62,6 @@ body, html, main{
   justify-content: space-evenly;
 }
 
-.text, .title{
-  color: #3C0E0E;
-}
-
 .font-weight{
   font-weight: 700;
 }
@@ -73,10 +71,100 @@ body, html, main{
   background: transparent;
 }
 
+/*
+*********
+Header
+*********
+*/
 
 
 
+/*
+*******
+Home
+*******
+*/
+#home{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
 
+#home-box--text{
+  position: absolute;
+  left: 18px;
+}
+  
+.home--title,.home--subtitle,.home--text{
+  color: #3C0E0E;
+}
+
+.home--title{
+  font-size: 32px;
+  line-height: 33.44px;
+  margin-bottom: 12px;
+}
+
+.home--subtitle{
+  width: 167px;
+  height: 104px;
+  margin-top: 12px;
+}
+
+.home--text{
+  font-size: 24px;
+  margin-bottom: 11px;
+  font-weight: 700;
+}
+
+.home--image{
+  background: url("./image/image-header-mobile.png") no-repeat center/cover;
+  width: 395px;
+  height: 555px;
+}
+
+@media (min-width:45rem){
+    #home{
+    position: static;
+  }
+  
+  #home-box--text{
+    position:  static;
+  }
+
+  .home--image{
+    background: url("./image/imagem-header.png")no-repeat top/cover;
+    width: 800px;
+    height: 430px;
+  }
+}
+
+@media (min-width:77.5rem){
+  .home--image{
+    background: url("./image/imagem-header.png")no-repeat top/cover;
+    width: 614px;
+    height: 530px;
+  }
+
+  .home--title{
+    font-size: 80px;
+    line-height: 83.6px;
+    margin-bottom: 20px;
+  }
+
+  .home--subtitle{
+    width: 351px; 
+    height: 108px;
+    margin-top: 20px;
+  }
+
+  .home--text{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+}
 
 
 /*
@@ -85,52 +173,151 @@ Coffe
 ******
 */
 
-.s-coffe-box--text{
+#coffe{
+  background: url("./image/Image-banner-01.png") no-repeat center/cover;
+  height: 609px;
+}  
+
+#s-coffe-box--cards{
+  gap: 70px;
+}
+
+.s-box-coffe{
+  border-radius: 48px;
+  width: 325.52px;
+  height: 468.149px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 29.93px 26.78px;
+}
+
+/*box-color*/
+.color-01{
+  background: linear-gradient(203deg, #F6C7C5 4.72%, #C27D7A 102.83%);
+}
+  
+.color-02{
+  background: linear-gradient(203deg, rgba(250, 250, 250, 0.95) 4.72%, rgba(84, 21, 17, 0.58) 102.83%);
+}
+
+.color-03{
+  background: linear-gradient(203deg, rgba(10, 9, 9, 0.95) 4.72%, rgba(84, 21, 17, 0.95) 102.83%);
+}
+
+.s-box-coffe--image{
+  width: 315.231px;
+  height: 186.521px;
+}
+
+/*import image*/
+.image-coffe-01{
+  background: url("./image/image-coffe-1.png");
+}
+
+.image-coffe-02{
+  background: url("./image/image-coffe-2.png");
+}
+
+.image-coffe-03{
+  background: url("./image/image-coffe-3.png");
+}
+
+.coffe--subtitle, .coffe--title{
+  color: #3C0E0E;
+}
+
+.coffe-box--text{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.coffe-subtitle{
+.coffe--title{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.coffe--line{
+  width: 39.764px;
+  height: 1px;
+  margin-bottom: 18.59px;
+  background-color: #3C0E0E;
+}
+
+.coffe--subtitle{
   margin-bottom: 20px;
   width: 331px;
   text-align: center;
 }
 
-.coffe-line{
-  width: 39.764px;
-  height: 1px;
-  margin: auto 18.59px;
+.box-coffe--text{
+  color: #FFF;
+  text-align: center;
 }
 
-.coffe-title{
-  font-size: 40px;
+.b-coffe--title{
+  font-size: 20px;
   font-weight: 600;
+  margin-bottom: 29.15px;
 }
 
-.coffe-line, .coffe-subtitle, .coffe-title{
-  color: #3C0E0E;
+.b-coffe--subtitle{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 21.24px;
+}
+
+.b-coffe--text{
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /*btn*/
-.coffe-button{
-  width: 544.404px;
-  height: 49.862px;
+.s-box-coffe--button{
+  width: 263.784px;
+  height: 46.169px;
+  border-radius: 25px;
+  border: none;
+  background: #FFF;
+  box-shadow: 0px 8px 7px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 29.55px;
 }
 
-.coffe-button a{
+.s-box-coffe--button a{
+  color: #000;
+  font-weight: 600;
+  line-height: 25.12px; 
+}
+
+.coffe--button{
+  width: 330.613px;
+  height: 62.733px;
+  margin: 29.55px 25.85px;
+}
+
+.coffe--button a{
   color: #3C0E0E;
   font-weight: 600;
+  font-size: 18px;
 }
 
 @media (min-width:78rem){
-  .coffe-subtitle{
+  .coffe--subtitle{
     margin-bottom: 20px;
     width: 544.404px;
     height: 49.862px;
     text-align: center;
   }
+
+  .coffe--button{
+    width: 544.404px;
+    height: 49.862px;
+  }
+
 
 }
 
