@@ -26,7 +26,7 @@ body, html, main{
 }
 
 .container{
-  padding: 0.625rem;
+  padding:0.625rem;
   margin: auto;
 }
 
@@ -309,7 +309,7 @@ Coffe
 
 #coffe{
   background: url("assets/image/Image-banner-01.png") no-repeat center/contain;
-  height: 609px;
+  min-height: 609px;
   width: 100%;
 }  
 
@@ -442,7 +442,7 @@ Coffe
 
 @media (min-width:78rem){
   #coffe{
-    height: 38.063rem;
+    min-height: 38.063rem;
   }  
   .coffe--subtitle{
     margin-bottom: 1.25rem;
@@ -467,7 +467,7 @@ Croissants
 ************
 */
 #croissants{
-  height: 100vh;
+  min-height: 100vh;
   padding: 47.75px 0 47.75px 0;
 }
 #c-image{
@@ -560,85 +560,84 @@ House
 */
 #house{
   color: #FFF;
-  border-radius: 48px;
+  border-radius: 3rem;
   background: linear-gradient(203deg, rgba(243, 199, 196, 0.95) 4.72%, rgba(84, 21, 17, 0.95) 81.94%);
-  padding: 25px 44px;
+  padding: 1.52rem 2.75rem;
+  margin: 0.625rem;
 }
 
+
 .h-title{
-  font-size: 36px;
+  font-size: 2.25em;
   font-weight: 700;
   text-align: center;
-  line-height: 37.62px; 
 }
 
 .h-subtitle{
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   text-align: center;
-  width: 270px;
-  height: 123px;
-  line-height: 25.12px;
-  margin-top: 19px;
+  height: 7.687rem;
+  margin-top: 1.19rem;
 }
 
 /*Button*/
 .h-btn{
-  width: 281.549px;
-  height: 48.114px;
-  border-radius: 25px;
+  padding:  0.78rem 6.44rem;
+  border-radius: 1.563rem;
   background: #FFF;
-  box-shadow: 0px 8px 7px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0rem 0.5rem 0.438rem 0rem rgba(0, 0, 0, 0.25);
 }
 
 .h-btn a{
   color: #000;
   text-align: center;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 600; 
 }
 
 @media (min-width:78rem){
   #house{
     color: #FFF;
-    width: 1115px;
-    height: 368.727px;
+    width:69.688rem;
+    height: 23.045rem;
     margin: auto;
     position: relative;
+    display: flex;
+    padding: 1.91rem 0rem;
   }
 
   #h-image{
     background: url("/assets/image/Image-house.png")no-repeat center/cover;
-    width: 589.865px;
-    height: 379.14px;
+    width: 36.867rem;
+    height: 23.696rem;
     position: absolute;
-    top: -50px;
-    left: 0;
+    top: -14rem;
+    left: 0rem;
   }
   
   .h-title{
-    text-align: right;
-    font-size: 48px;
+    font-size: 2.7rem;
+    font-weight: 700;
   }
   
   .h-subtitle{
     text-align: right;
-    width: 424.306px;
-    height: 46.19px;
+    width: 26.519rem;
+    height: 2.887rem;
   }
 
   .h-box--text{
     position: absolute;
-    left: 630px;
+    left: 39.375rem;
   }
 
   /*Button*/
   .h-btn{
-    margin-top: 43.23px;
+    margin-top: 2rem;
     float: right;
   }
 }
-
 
 /*
 *******
@@ -646,40 +645,47 @@ About
 *******
 */
 #about{
-  background: url("/assets/image/Background.png") no-repeat center/cover;
-  color: #4D1D1D;
-  height: 100vh;
-  margin: 72px 0 72px 0;
+  background: url("/assets/image/Background-mobile.png") no-repeat top/contain;
+  color: var(--brand-color2);
 }
 
 .a-title{
-  font-size: 20px;
+  font-size: 1em;
   font-weight: 500;
+}
 
+.about-title{
+  font-size: 1.25em;
+  font-weight: 500;
 }
 
 .a-subtitle{
-  font-size: 32px;
+  font-size: 1.7em;
   font-weight: 700;
-  width: 315px; 
-  margin-bottom: 15px;
+  margin-bottom: 0.938rem;
 }
 
 .a-text{
   font-weight: 400;
-  font-size: 16px;
-  margin-top: 28px;
+  font-size: 1em;
+  margin-top: 1.75rem;
 }
 
 @media (min-width:78rem){
+  #about{
+    background: url("/assets/image/Background.png") no-repeat top/contain;
+    height: 46.875rem;
+    display: flex;
+  }
+
   .a-subtitle{
-    padding-right: 151px;
-    width: 449px; 
-    padding-bottom: 50px;
+    padding-right: 9.438rem;
+    width: 28.063rem; 
+    padding-bottom: 3.125rem;
   }
 
   .a-text{
-    width: 338px;
+    width: 21.125rem;
   }
 }
 
@@ -689,53 +695,52 @@ Contact
 *******
 */
 #contact{
-  margin-bottom: 74.6px;
+  margin-bottom: 4.663rem;
   position: relative;
 }
 
 #c-box-first{
-  border-radius: 48px 48px 0px 0px;
+  border-radius: 3rem 3rem 0rem 0rem;
   background: linear-gradient(203deg, rgba(84, 21, 17, 0.66) 4.72%, #F3C7C4 102.83%);
-  border-radius: 48px 48px 0px 0px;
-  padding: 20px ;
+  padding: 1.25rem;
 }
 
 .c-box-fist--line{
-  width: 35.2px;
-  height: 1px;
+  width: 2.2rem;
+  height: 0.063rem;
   background: #FFF;
 }
 
 .c-box-first--title{
   color: #FFF;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 83.6px;
-  width: 308.276px;
+  line-height: 5.225rem;
+  width: 19.297rem;
 }
 
 .c-box-first--text:first-of-type{
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 500;
-  line-height: 31.4px;
+  line-height: 1.963rem;
 }
 
 .c-box-first--text{
   font-weight: 400;
-  line-height: 25.12px ;   
+  line-height: 1.57rem;   
   color: #FFF;
-  margin-top: 16.88px;
+  margin-top: 1.055rem;
 }
 
 .contact-btn{
-  width: 270px;
-  height: 20px;
-  margin-top: 60px;
+  width: 16.875rem;
+  height: 1.25rem;
+  margin-top: 3.75rem;
 }
 
 .contact-btn a{
   color: #3C0E0E;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 600;
 }
 
@@ -745,99 +750,99 @@ Contact
 
 #c-box-first--image{
   background: url("/assets/image/Image.png") no-repeat center / cover;
-  width: 165px;
-  height: 137px;
+  width: 10.313rem;
+  height: 8.563rem;
 }
 
 #c-box-second{
-  border-radius: 0px 0px 48px 48px;
+  border-radius: 0rem 0rem 3rem 3rem;
   background: linear-gradient(203deg, #8F423D 4.72%, #FFF 102.83%);
-  border-radius: 0px 0px 48px 48px;
-  padding: 20px ;
-  height: 457.939px;
+  padding: 1.25rem;
+  height: 28.621rem;
 }
 
 .c-box-second--title{
   color: #FFF;
-  font-size: 36px;
+  font-size: 2em;
   font-style: normal;
   font-weight: 700;
 }
 
 .c-box-second-text{
   color: #FFF;
-  font-size: 16px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
-  line-height: 25.12px; 
-  margin-top: 34.18px;
+  line-height: 1.57rem; 
+  margin-top: 2.136rem;
 }
 
 .c-box-second--line{
-  width: 249.83px;
-  height: 1px;
+  width: 15.614rem;
+  height: 0.063rem;
   background: #FFF;
-  margin: 28.16px auto;
+  margin: 1.76rem auto;
 }
 
 .c-box-second--address{
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 #c-box-second--address-icon{
   background: url("/assets/image/icons/icon8-adrress.png")no-repeat center/cover;
-  width: 23px;
-  height: 27px;
+  width: 1.438rem;
+  height:1.688rem;
 }
 
 @media (min-width:78rem){
   #c-box-first{
-    border-radius: 48px 0px 0px 48px;
-    padding: 42.05px 52.97px;
-    width: 743px;
+    border-radius: 3rem 0rem 0rem 4rem;
+    padding: 2.628rem 3.311rem;
+    width: 46.438rem;
   }
 
   .c-box-fist--line{
-    width: 51.41px;
-    height: 1px;
+    width: 3.213rem;
+    height: 0.063rem;
     background: #FFF;
   }
   
   .c-box-first--title{
-    font-size: 80px;
+    font-size: 5rem;
   }
 
   .contact-btn{
-    width: 176.664px;
-    height: 18.354px;
+    width: 11.042rem;
+    height: 1.147rem;
   }
+
   .c-box-second--title{
-    font-size: 40px;
+    font-size: 2.5em;
   }
 
   #c-box-first--image{
     background: url("/assets/image/Image.png") no-repeat center / cover;
-    width: 631.876px;
-    height: 562.558px;
+    width: 39.492rem;
+    height: 35.16rem;
     position: absolute;
-    left: 400px;
-    top: -90px;
+    left: 18rem;
+    top: -5.625rem;
   }
 
   #c-box-second{
-    border-radius: 0px 48px 48px 0px;
-    padding: 41.59px 33.97px;
+    border-radius: 0rem 3rem 3rem 0rem;
+    padding: 2.599rem 2.123rem;
   }
 
   .c-box-second--line{
-    width: 281.353px;
+    width: 17.585rem;
   }
 
   #c-box-second--address-icon{
-    width: 29.911px;
-    height: 40.379px;
+    width: 1.869rem;
+    height: 2.524rem;
   }
 }
 
@@ -846,22 +851,19 @@ Contact
 Footer
 ********
 */
-#footer{
-  padding-bottom: 25px;
-}
 
 .f--line{
   background: rgba(0, 0, 0, 0.08);
   height: 0.063rem;
   width: 20.625rem;
   margin: auto;
-  margin-bottom: 1.563rem;
 }
 
 .f--title{
   color: #282828;
   font-size: 1.25em;
   font-weight: 500;
+  margin-top: 1.563rem;
 }
 
 .f--text, .f--list, .f--list a{
