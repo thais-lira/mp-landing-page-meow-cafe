@@ -1,16 +1,16 @@
-
-@import url("assets/css/header.css");/*
-1- Import
-2- Global setings
-3 - Header
-4-
-5-
-6-
-7-
-8-
-9-
-10-
-
+/*
+******************************
+  1- Import
+  2- Global settings
+  3 - Header
+  4- 
+  5- Coffe
+  6- Croissants
+  7- House
+  8- About
+  9- Contact
+  10- Footer
+  *****************************
 */
 
 
@@ -21,20 +21,19 @@
 /*Global settings*/
 
 body, html, main{
-  background-color: #F7F2E8; 
+  background-color: var(--bg-color); 
   overflow-x: hidden;
 }
 
+.container{
+  padding: 0.625rem;
+  margin: auto;
+}
+
+/*display-flex*/
 .d-flex{
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width:48rem){/*Medium*/
-  .d-flex{
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 .align-items-center{
@@ -62,13 +61,22 @@ body, html, main{
   justify-content: space-evenly;
 }
 
-.font-weight{
-  font-weight: 700;
-}
-
 .btn{
   border: none;
   background: transparent;
+}
+
+/*Medium*/
+@media (min-width:48rem){
+  .container{
+    width: 74.25rem;
+    position: relative;
+  }
+
+  .d-flex{
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*
@@ -76,96 +84,222 @@ body, html, main{
 Header
 *********
 */
-
-
-
-/*
-*******
-Home
-*******
-*/
-#home{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
+#header{
+  margin: auto;
+  height: 34.688rem;
+  margin-bottom: 2.688rem;
 }
 
-#home-box--text{
+.header--logo{
+  width: 4.366rem;
+  height: 3.5rem;
+}
+
+.header--image{
   position: absolute;
-  left: 18px;
-}
-  
-.home--title,.home--subtitle,.home--text{
-  color: #3C0E0E;
-}
-
-.home--title{
-  font-size: 32px;
-  line-height: 33.44px;
-  margin-bottom: 12px;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  height: 28.438rem;
+  width: 100%;
+  background: url("/assets/image/image-header-mobile.png") no-repeat center/cover;
 }
 
-.home--subtitle{
-  width: 167px;
-  height: 104px;
-  margin-top: 12px;
+/*Navigation*/
+.icon-mobile{
+  font-size: 1.5em;
 }
 
-.home--text{
-  font-size: 24px;
-  margin-bottom: 11px;
+.navbar-mobile{
+  display: none;
+}
+
+.navbar-mobile.open{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.95rem;
+  gap: 0.625rem;
+  background-color: var(--bg-color);
+  height: 8.125rem;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
+.mobile-navigation--link{
+  color: var(--headings-color); 
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.navigation, .navigation--buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-bar{
+  position: absolute; 
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation--title{
+  color: var(--title-color);
+  font-weight: 800;
+  font-size: 0.875rem;
+}
+
+.navigation--link {
+  color: var(--headings-color); 
+  font-size: 1.25em;
+  font-weight: 500;
+  display: none;
+}
+
+.navigation--item .active{
+  border-bottom: 5px solid var(--headings-color);
+}
+
+.navigation--icon {
+  display: none;
+}
+
+.navigation--menu, .navigation--buttons{
+  gap: 0.75rem; 
+}
+
+/*Buttons*/
+.btn--delivery{
+  background-color: var(--brand-color);
+  border-radius: 2.438rem;
+  padding: 0.463rem 1.125rem;
+}
+
+.btn--delivery .btn--delivery-link{
+  color: #FFF;
+  font-size: 1.25em;  
+  font-weight: 500;
+}
+
+/*Header -- Titles*/
+
+.header-box--titles{
+  position: absolute;
+  margin-top: 6rem;
+}
+
+.h-box-titles--main, .h-box-titles--description, .h-box-titles--text{
+  color: var(--headings-color);
+}
+
+.h-box-titles--main{
+  font-size: 2em;
+  width: 22rem;
+  line-height: 2.09rem;
+}
+
+.h-box-titles--description{
+  width: 10.438rem;
+  font-weight: 500;
+  margin: 0.75rem 0 0 0;
+}
+
+.h-box-titles--text{
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
-.home--image{
-  background: url("./image/image-header-mobile.png") no-repeat center/cover;
-  width: 395px;
-  height: 555px;
+@media (min-width:26.563rem){
+  .navigation--menu, .navigation--buttons{
+    gap: 1.75rem; 
+  }
 }
 
+/*MD*/
 @media (min-width:45rem){
-    #home{
-    position: static;
+  .navigation--menu, .navigation--buttons{
+    gap: 5.75rem; 
   }
   
-  #home-box--text{
-    position:  static;
-  }
-
-  .home--image{
-    background: url("./image/imagem-header.png")no-repeat top/cover;
-    width: 800px;
-    height: 430px;
+  .header--image{
+    background: url("/assets/image/imagem-header.png") no-repeat center/cover;
   }
 }
 
-@media (min-width:77.5rem){
-  .home--image{
-    background: url("./image/imagem-header.png")no-repeat top/cover;
+/*LG*/
+@media (min-width:60rem){
+  #header{
+    height: 33.125rem;
+  }
+
+  .header--logo{
+    width: 11.938rem;
+    height: 10.563rem;
+  }
+
+  .header--image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    background: url("/assets/image/imagem-header.png") no-repeat center/cover;
     width: 614px;
     height: 530px;
   }
 
-  .home--title{
-    font-size: 80px;
-    line-height: 83.6px;
-    margin-bottom: 20px;
+  /*Navigation*/
+    .icon-mobile, .mobile-navigation--link{
+    display: none;
   }
 
-  .home--subtitle{
-    width: 351px; 
-    height: 108px;
-    margin-top: 20px;
+  .navigation--title{
+    font-size: 1.5em;
+    margin: 0 2.625rem 0 0;
   }
 
-  .home--text{
-    font-size: 24px;
+  .navigation--menu, .navigation--buttons{
+    gap: 2.625rem; 
+  }
+
+  .nav-bar{
+    z-index: 10;
+    position: relative;
+  }
+
+  .navigation--link {
+    display: block;
+  }
+
+ /*Buttosn*/
+  .btn--delivery{
+    padding: 0.625rem 2rem;
+  }
+
+  .btn--delivery .btn--delivery-link{
+    font-size: 1.25em;  
+  }
+
+  /*Header -- Titles*/
+  .header-box--titles{
+    margin-top: 0rem;
+  }
+
+  .h-box-titles--text{
+    font-size: 1.5em;
     font-weight: 700;
-    margin-bottom: 8px;
+  }
+
+  .h-box-titles--main{
+    font-size: 5em;
+    line-height: 5.225rem;
+  }
+
+  .h-box-titles--description{
+    width: 21.938rem; 
   }
 }
-
 
 /*
 ******
@@ -174,36 +308,37 @@ Coffe
 */
 
 #coffe{
-  background: url("./image/Image-banner-01.png") no-repeat center/cover;
+  background: url("assets/image/Image-banner-01.png") no-repeat center/contain;
   height: 609px;
+  width: 100%;
 }  
 
 #s-coffe-box--cards{
-  gap: 70px;
+  gap: 4.375rem;
 }
 
 .s-box-coffe{
-  border-radius: 48px;
-  width: 325.52px;
-  height: 468.149px;
+  border-radius: 3rem;
+  width: 100%;
+  height: 29.259rem;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 29.93px 26.78px;
+  padding: 1.871rem 1.674rem;
 }
 
 /*box-color*/
-.color-01{
+#color-01{
   background: linear-gradient(203deg, #F6C7C5 4.72%, #C27D7A 102.83%);
 }
   
-.color-02{
+#color-02{
   background: linear-gradient(203deg, rgba(250, 250, 250, 0.95) 4.72%, rgba(84, 21, 17, 0.58) 102.83%);
 }
 
-.color-03{
+#color-03{
   background: linear-gradient(203deg, rgba(10, 9, 9, 0.95) 4.72%, rgba(84, 21, 17, 0.95) 102.83%);
 }
 
@@ -213,20 +348,20 @@ Coffe
 }
 
 /*import image*/
-.image-coffe-01{
-  background: url("./image/image-coffe-1.png");
+#image-coffe-01{
+  background: url("/assets/image/image-coffe-1.png");
 }
 
-.image-coffe-02{
-  background: url("./image/image-coffe-2.png");
+#image-coffe-02{
+  background: url("/assets/image/image-coffe-2.png");
 }
 
-.image-coffe-03{
-  background: url("./image/image-coffe-3.png");
+#image-coffe-03{
+  background: url("/assets/image/image-coffe-3.png");
 }
 
 .coffe--subtitle, .coffe--title{
-  color: #3C0E0E;
+  color: var(--headings-color);
 }
 
 .coffe-box--text{
@@ -237,15 +372,15 @@ Coffe
 }
 
 .coffe--title{
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
 .coffe--line{
-  width: 39.764px;
-  height: 1px;
-  margin-bottom: 18.59px;
-  background-color: #3C0E0E;
+  width: 2.485rem;
+  height: 0.063rem;
+  margin-bottom: 1.162rem;
+  background-color: var(--headings-color);
 }
 
 .coffe--subtitle{
@@ -294,31 +429,36 @@ Coffe
 }
 
 .coffe--button{
-  width: 330.613px;
+  width: 20.663px;
   height: 62.733px;
   margin: 29.55px 25.85px;
 }
 
 .coffe--button a{
-  color: #3C0E0E;
+  color: var(--headings-color);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 @media (min-width:78rem){
+  #coffe{
+    height: 38.063rem;
+  }  
   .coffe--subtitle{
-    margin-bottom: 20px;
-    width: 544.404px;
-    height: 49.862px;
+    margin-bottom: 1.25rem;
+    width: 34.025rem;
+    height: 0.616rem;
     text-align: center;
   }
 
   .coffe--button{
-    width: 544.404px;
-    height: 49.862px;
+    width: 34.025rem;
+    height: 0.616rem;
   }
 
-
+  .s-box-coffe{
+    width: 20.345rem;
+  }
 }
 
 /*
@@ -331,7 +471,7 @@ Croissants
   padding: 47.75px 0 47.75px 0;
 }
 #c-image{
-  background: url("./image/Image-croissants.png") no-repeat center/cover;
+  background: url("/assets/image/Image-croissants.png") no-repeat center/cover;
   filter: lightgray 50%;
   width: 296px;
   height: 251px;
@@ -468,7 +608,7 @@ House
   }
 
   #h-image{
-    background: url("./image/Image-house.png")no-repeat center/cover;
+    background: url("/assets/image/Image-house.png")no-repeat center/cover;
     width: 589.865px;
     height: 379.14px;
     position: absolute;
@@ -506,7 +646,7 @@ About
 *******
 */
 #about{
-  background: url("./image/Background.png") no-repeat center/cover;
+  background: url("/assets/image/Background.png") no-repeat center/cover;
   color: #4D1D1D;
   height: 100vh;
   margin: 72px 0 72px 0;
@@ -604,7 +744,7 @@ Contact
 }
 
 #c-box-first--image{
-  background: url("./image/Image.png") no-repeat center / cover;
+  background: url("/assets/image/Image.png") no-repeat center / cover;
   width: 165px;
   height: 137px;
 }
@@ -647,7 +787,7 @@ Contact
 }
 
 #c-box-second--address-icon{
-  background: url("./image/icons/icon8-adrress.png")no-repeat center/cover;
+  background: url("/assets/image/icons/icon8-adrress.png")no-repeat center/cover;
   width: 23px;
   height: 27px;
 }
@@ -678,7 +818,7 @@ Contact
   }
 
   #c-box-first--image{
-    background: url("./image/Image.png") no-repeat center / cover;
+    background: url("/assets/image/Image.png") no-repeat center / cover;
     width: 631.876px;
     height: 562.558px;
     position: absolute;
@@ -712,71 +852,66 @@ Footer
 
 .f--line{
   background: rgba(0, 0, 0, 0.08);
-  height: 1px;
-  width: 330px;
+  height: 0.063rem;
+  width: 20.625rem;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 1.563rem;
 }
 
 .f--title{
   color: #282828;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1.25em;
   font-weight: 500;
-  line-height: 31.4px; 
-  margin-top: 39px;
 }
 
 .f--text, .f--list, .f--list a{
   color: rgba(60, 14, 14, 0.68);
-  font-size: 16px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
-  line-height: 25.12px ;
-  width: 304px;
+  width: 19rem;
 }
 
 .f--text{
-  margin-top: 23px;
+  margin-top: 1.438rem;
 }
 
 .f--text:first-of-type{
-  margin-top: 0px;
+  margin-top: 0.625rem;
 }
 
 .f-box--social-icons{
   display: flex;
-  margin-top: 22px;
+  margin-top: 1.375rem;
 }
 
 .f--social-icons{
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 #icons-01{
-  background: url("./image/icons/icons8-instagram-24.png");
+  background: url("/assets/image/icons/icons8-instagram-24.png");
 }
 #icons-02{
-  background: url("./image/icons/icons8-facebook-24.png");
+  background: url("/assets/image/icons/icons8-facebook-24.png");
 }
 #icons-03{
-  background: url("./image/icons/icons8-whatsapp-24.png");
+  background: url("/assets/image/icons/icons8-whatsapp-24.png");
 }
 
 @media (min-width:78rem){
   #footer{
-    padding-bottom: 71px;
+    padding-bottom: 4.5rem;
   }
 
   .f--line{
-    width: 1117.007px;
-    margin-bottom: 71px;
+    width: 69.81294rem;
+    margin-bottom: 4.5rem;
   }
 
   .f--title{
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 }

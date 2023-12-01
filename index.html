@@ -7,65 +7,100 @@
   <title>Meow Café</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- Link -- Font awesome -->
+  <script src="https://kit.fontawesome.com/87934cb2e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <main>
-  <header >
-    <div class="d-flex align-items-center justify-content-space-around">
-      <div class="d-flex align-items-center">
-        <div class="d-flex align-items-center" id="h-box-logo">
-          <img src="./assets/image/logo-header.png" alt="logo" class="header--logo">
-          <a href="" class="h--logo-link">Meow Café</a>
-        </div>
+    <!--
+      *********
+      Header
+      ********
+    -->
+    <header class="container" id="header">
+      <nav class="nav-bar d-flex align-items-center justify-content-space-around">
+        <!--Navigation-->
+        <div class="navigation d-flex align-items-center"> 
+          <!-- Logo -- Header-->
+          <img src="./assets/image/logo-header.png" alt="Logo Meow Café - Ilustração de cato deitado proximo ao uma xícara de café" class="header--logo">         
+          <span class="navigation--title">Meow Café</span>
+          <!-- End Logo -- Header-->
 
-        <nav class="navigation">
-        <a href="" class="navigation--link">Inicio</a>
-        <a href="" class="navigation--link">Produtos</a>
-        <a href="" class="navigation--link">Sobre</a>
-        </nav>
+          <!-- **  Links ** -->
+          <ul class="navigation--menu d-flex">
+            <li class="navigation--item">
+              <a href="" class="navigation--link active">Inicio</a>
+            </li>
+            <li class="navigation--item">
+              <a href="" class="navigation--link">Produtos</a>
+            </li>
+            <li class="navigation--item">
+              <a href="" class="navigation--link">Sobre</a>
+            </li>
+          </ul>
+          <!-- ** End Links ** -->
+        </div>
+        <!-- End Navigation-->
+
+        <!--Navigation -- Buttons-->
+        <ul class="navigation--buttons d-flex align-items-center justify-content-space-around">
+          <li class="navigation--item">  
+            <a href="#" class="navigation--link">Login</a>
+          </li>
+          <li class="navigation--item">
+            <button role="button" class="btn btn--delivery">
+              <a href="#" class="btn--delivery-link">Delivery</a>
+            </button>
+          </li>  
+          <li>
+            <i class="fa fa-bars icon-mobile"></i>
+          </li>      
+        </ul>   
+        <!--End Navigation -- Buttons-->   
+      </nav>
+
+      <nav class="navbar-mobile">
+        <ul >
+          <li class="navigation--item">
+            <a href="" class="mobile-navigation--link">Inicio</a>
+          </li>
+          <li class="navigation--item">
+            <a href="" class="mobile-navigation--link">Produtos</a>
+          </li>
+          <li class="navigation--item">
+            <a href="" class="mobile-navigation--link">Sobre</a>
+          </li>
+          <li class="navigation--item">  
+            <a href="#" class="mobile-navigation--link">Login</a>
+          </li>
+        </ul> 
+      </nav>  
+
+      <!--Image -- Header -->
+      <div class="header--image">
+        <!--Image in CSS-->
       </div>
 
-      <div class="header-box--button">
-        <button role="button" class="btn btn--login">
-        <a href="">Login</a>
-        </button>
-
-        <button role="button" class="btn btn--delivery">
-        <a href="">Delivery</a>
-        </button>
-      </div> 
-    </div> 
-  </header>
-  <!--
-    *******
-    Home
-    *******
-  -->
-<section class="" id="home">
-  <div class="" id="home-box--text">
-    <p class="home--text">
-    Sabor inesquecível
-    </p> 
-    <h1 class="home--title">
-    Meow <br>
-    Café
-    </h1>
-    <p class="home--subtitle">
-    Um lugar perfeito para pais de pets e amantes de café. Nossa cafeteria tem um espaço confortável para você e seu melhor amigo.
-    </p>
-  </div>
-  
-  <div class="home--image">
-  <!--Image in CSS-->
-  </div>
-  </section> 
+      <!--Titles -- Header -->
+      <div class="header-box--titles">
+        <h2 class="h-box-titles--text">
+        Sabor inesquecível
+        </h2> 
+        <h1 class="h-box-titles--main">
+        Meow Café
+        </h1>
+        <p class="h-box-titles--description">
+        Um lugar perfeito para pais de pets e amantes de café. Nossa cafeteria tem um espaço confortável para você e seu melhor amigo.
+        </p>
+      </div>
+    </header>
     <!--
       ******
       coffe
       ******
     -->
-    <section class="" id="coffe">
+    <section class="container" id="coffe">
 
       <div class="coffe-box--text">
         <h2 class="coffe--title">
@@ -82,8 +117,8 @@
 
       <div class="d-flex align-items-center justify-content-center" id="s-coffe-box--cards">
         <!--Box 01-->
-        <div class="s-box-coffe color-01">
-          <div class="s-box-coffe--image image-coffe-01">
+        <div class="s-box-coffe" id="color-01">
+          <div class="s-box-coffe--image " id="image-coffe-01">
           <!--Image in CSS-->
           </div>
 
@@ -103,8 +138,8 @@
           </button>
         </div>
         <!--Box 02-->
-        <div class="s-box-coffe color-02">
-          <div class="s-box-coffe--image image-coffe-02">
+        <div class="s-box-coffe " id="color-02">
+          <div class="s-box-coffe--image " id="image-coffe-02">
           <!--Image in CSS-->
           </div>
 
@@ -124,8 +159,8 @@
           </button>
         </div>
         <!--Box 03-->
-        <div class="s-box-coffe color-03">
-          <div class="s-box-coffe--image image-coffe-03">
+        <div class="s-box-coffe " id="color-03">
+          <div class="s-box-coffe--image " id="image-coffe-03">
           <!--Image in CSS-->
           </div>
 
@@ -153,7 +188,7 @@
       Croissants
       *******
     -->
-    <section class="d-flex align-items-center justify-content-space-around" id="croissants">
+    <section class="container d-flex align-items-center justify-content-space-around" id="croissants">
       <div>
         <div class="c-value d-flex align-items-center justify-content-center"><span>R$ 12,00</span></div>
         <h2 class="c-title">Croissants</h2>
@@ -175,7 +210,7 @@
      House
       *******
     -->
-    <section class="d-flex align-items-center justify-content-space-around" id="house">
+    <section class="container d-flex align-items-center justify-content-space-around" id="house">
       <div id="h-image">
       <!--Image in CSS-->
       </div>
@@ -192,7 +227,7 @@
       About
       *******
     -->
-    <section class="d-flex  align-items-center justify-content-center" id="about">
+    <section class="container d-flex  align-items-center justify-content-center" id="about">
       <div>
         <h2 class="a-title">Sobre nós</h2>
         <p class="a-subtitle">
@@ -215,7 +250,7 @@
       Contact
       *********
     -->
-    <section class="d-flex justify-content-center" id="contact">
+    <section class="container d-flex justify-content-center" id="contact">
       <div class="" id="c-box-first">
         <h2 class="c-box-first--title">Meow Enjoy</h2>
         <div class="c-box-fist--line"></div>
@@ -245,7 +280,7 @@
     Footer
     ********
   -->
-  <footer class="" id="footer">
+  <footer class="container" id="footer">
     <div class="f--line "></div>
     <div class="d-flex justify-content-space-around">
       <div>
@@ -287,6 +322,6 @@
       </div>
     </div>
   </footer>
-
+<script src="assets/script/script.js"></script>
 </body>
 </html>

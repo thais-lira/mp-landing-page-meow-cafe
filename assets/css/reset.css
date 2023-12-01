@@ -5,6 +5,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
+:root{
+  --bg-color: #F7F2E8;
+  --title-color: #1A1A1A;
+  --headings-color:#3C0E0E;
+  --brand-color: #431B1B;
+}
+
 a, li{
   text-decoration: none;
   list-style: none;
