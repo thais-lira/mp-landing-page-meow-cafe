@@ -812,17 +812,23 @@ text-align: justify;
   height:1.688rem;
 }
 
-@media (min-width:78rem){
+/*Medium*/
+@media (min-width:45rem){
   #contact{
-    margin: 4.456rem auto;/* top/bottom -- right/left*/
+    margin: 2rem auto;/* top/bottom -- right/left*/
   }
   
   #c-box-first{
     border-radius: 3rem 0rem 0rem 4rem;
     padding: 2.628rem 3.311rem; /*  top/bottom -- right/left */
-    width: 46.438rem;
+    width: 20.438rem;
   }
 
+  #c-box-second{
+    border-radius: 0rem 3rem 3rem 0rem;
+    padding: 2.599rem 2.123rem; /*  top/bottom -- right/left */
+  }
+  
   .c-box-fist--line{
     width: 3.213rem;
     height: 0.063rem;
@@ -850,12 +856,7 @@ text-align: justify;
     left: 18rem;
     top: -5.625rem;
   }
-
-  #c-box-second{
-    border-radius: 0rem 3rem 3rem 0rem;
-    padding: 2.599rem 2.123rem; /*  top/bottom -- right/left */
-  }
-
+  
   .c-box-second--line{
     width: 17.585rem;
   }
@@ -864,6 +865,16 @@ text-align: justify;
     width: 1.869rem;
     height: 2.524rem;
   }
+}
+
+/*Large*/
+@media (min-width:62rem){
+  #c-box-first{
+    border-radius: 3rem 0rem 0rem 4rem;
+    padding: 2.628rem 3.311rem; /*  top/bottom -- right/left */
+    width: 46.438rem;
+  }
+
 }
 
 /*
@@ -924,7 +935,8 @@ text-align: justify;
   background: url("/assets/image/icons/icons8-whatsapp-24.png");
 }
 
-@media (min-width:78rem){
+/*Large*/
+@media (min-width:62rem){
   #footer{
     padding: 0 0 4.5rem 0;/* top - right - bottom - left*/
   }
